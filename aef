@@ -1,0 +1,22 @@
+// Mon AEF Modifié
+digraph {
+	q1 [label=q1 shape=doublecircle]
+	q1 -> q1 [label=a]
+	q2 [label=q2]
+	q2 -> q1 [label=b]
+	q2 -> q5 [label=a]
+	q3 [label=q3]
+	q3 -> q1 [label=c]
+	q3 -> q4 [label=a]
+	q4 [label=q4]
+	q4 -> q2 [label=c]
+	q5 [label=q5]
+	q5 -> q3 [label=b]
+	",kjengle" [label="" shape=point]
+	",kjengle" -> Mirror_start [label=""]
+	Mirror_start [label=Mirror_start]
+	Mirror_start -> q1 [label=b]
+	Mirror_start -> q5 [label=a]
+	Mirror_start -> q1 [label=c]
+	Mirror_start -> q4 [label=a]
+}
